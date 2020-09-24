@@ -1,3 +1,3 @@
-# in-class sampler project scaffold
+Bee Trouble
 
-including howler.js
+click the buzzing bees to kill them and stop their buzzing!
