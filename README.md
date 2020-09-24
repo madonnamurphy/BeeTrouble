@@ -1,2 +1,3 @@
-# BeeTrouble
-Click the buzzing bees to KIIILLLL THEEEMMMMM
+# in-class sampler project scaffold
+
+including howler.js

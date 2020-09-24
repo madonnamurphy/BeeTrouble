@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+        --width: 300px;
+        --x-speed: 13s;
+        --y-speed: 7s;
+        --transition-speed: 2.2s;
+        }
+
+        #video {
+            left: 50%;
+            max-width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .button1 {
+            background-image:(" lightblue");
+            width: 150px;
+            height: 150px;
+            border-radius: 3px;
+            border: transparent;
+            margin: 50px 50px;
+            animation: shake 0.7s;
+            animation-iteration-count: infinite;
+        }
+
+        .button1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .button1:hover {
+            animation: shake 0.1s;
+            animation-iteration-count: infinite;
+        }
+        .button2 {
+            background-image:(" lightblue");
+            width: 150px;
+            height: 150px;
+            border-radius: 3px;
+            border: transparent;
+            margin: 50px 50px;
+            animation: shake 0.9s;
+            animation-iteration-count: infinite;
+        }
+
+        .button2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .button2:hover {
+            animation: shake 0.1s;
+            animation-iteration-count: infinite;
+        }
+        .button3 {
+            background-image:(" lightblue");
+            width: 150px;
+            height: 150px;
+            border-radius: 3px;
+            border: transparent;
+            margin: 50px 50px;
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        .button3 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .button3:hover {
+            animation: shake 0.1s;
+            animation-iteration-count: infinite;
+        }
+        .button4 {
+            background-image:(" lightblue");
+            width: 150px;
+            height: 150px;
+            border-radius: 3px;
+            border: transparent;
+            margin: 50px 50px;
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        .button4 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .button4:hover {
+            animation: shake 0.1s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+
+    </style>
+
+    <script src="libs/howler.js"></script>
+
+    <title>sampler</title>
+</head>
+<body>
+
+    <video autoplay muted loop id="video">
+        <source src="https://res.cloudinary.com/dfg0l4zth/video/upload/v1600800385/tulips_ta0mrx.mp4" type="video/mp4">
+        </video>
+
+    <div class="container">
+       <div class="button1" onclick="this.style.visibility='hidden'; playSound(sound1)">
+            <img src = "https://res.cloudinary.com/madonna/image/upload/v1600794074/b1_jpg10m.png" alt= "">
+                </div>
+       <div class="button2" onclick="this.style.visibility='hidden'; playSound(sound2)">
+            <img src = "https://res.cloudinary.com/dfg0l4zth/image/upload/v1600798703/b7_vh9dzs.png" alt= "">
+                </div>
+       <div class="button3" onclick="this.style.visibility='hidden'; playSound(sound3)">
+            <img src = "https://res.cloudinary.com/dfg0l4zth/image/upload/v1600798699/b2_rl2eev.png" alt= "">
+                </div>
+       <div class="button4" onclick="this.style.visibility='hidden'; playSound(sound4);">
+            <img src = "https://res.cloudinary.com/dfg0l4zth/image/upload/v1600798701/b3_blyr7d.png" alt= "">
+                </div>
+        <div class="button1" onclick="this.style.visibility='hidden'; playSound(sound5)">
+            <img src = "https://res.cloudinary.com/dfg0l4zth/image/upload/v1600798703/b4_tqjy0t.png" alt= "">
+                </div>
+        <div class="button2" onclick="this.style.visibility='hidden'; playSound(sound6)">
+            <img src = "https://res.cloudinary.com/dfg0l4zth/image/upload/v1600798700/b8_nvmfa1.png" alt= "">
+                </div>
+        <div class="button3" onclick="this.style.visibility='hidden'; playSound(sound7)">
+            <img src = "https://res.cloudinary.com/dfg0l4zth/image/upload/v1600798699/b2_rl2eev.png" alt= "">
+                </div>
+        <div class="button4" onclick="this.style.visibility='hidden'; playSound(sound8);">
+            <img src = "https://res.cloudinary.com/dfg0l4zth/image/upload/v1600798699/b6_u55je4.png" alt= "">
+                </div>
+        <div class="button1" onclick="this.style.visibility='hidden'; playSound(sound9)">
+            <img src = "https://res.cloudinary.com/madonna/image/upload/v1600794074/b1_jpg10m.png" alt= "">
+                </div>
+        <div class="button2" onclick="this.style.visibility='hidden'; playSound(sound10)">
+            <img src = "https://res.cloudinary.com/dfg0l4zth/image/upload/v1600798703/b7_vh9dzs.png" alt= "">
+                </div>
+    </div>
+</body>
+
+<script>
+
+const sound1 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966446/bee1_nrsgtn.mp3', loop: true})
+const sound2 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966446/bee2_hhkcgd.mp3', loop: true})
+const sound3 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966519/bee3_wplx5p.wav', volume: 5, loop: true})
+const sound4 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966512/bee4_b1kyjg.wav', loop: true})
+const sound5 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966454/bee5_uux2t8.wav', loop: true})
+const sound6 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966468/bee6_gjwe4h.wav', loop: true})
+const sound7 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966446/bee1_nrsgtn.mp3', loop: true})
+const sound8 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966446/bee2_hhkcgd.mp3', loop: true})
+const sound9 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966519/bee3_wplx5p.wav', volume: 5, loop: true})
+const sound10 = new Howl({ src : 'https://res.cloudinary.com/dfg0l4zth/video/upload/v1600966512/bee4_b1kyjg.wav', loop: true})
+
+const playSound = (sound) => {
+    if(!sound.playing()) {
+        sound.play();
+    } else {
+        sound.stop();
+    }
+}
+
+playSound(sound1);
+playSound(sound2);
+playSound(sound3);
+playSound(sound4);
+playSound(sound5);
+playSound(sound6);
+playSound(sound7);
+playSound(sound8);
+playSound(sound9);
+playSound(sound10);
+
+</script>
+</html>
